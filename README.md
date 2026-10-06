@@ -1,12 +1,23 @@
-# Harsh Mehlana Portfolio
+# Harsh Mehlana — Portfolio
 
-Mini Project submission site built with HTML, Bootstrap 5 and JavaScript.
+Portfolio mini-project for a B.Tech Computer Science & Engineering student at Indus University, Ahmedabad.
+
+## Current verified information
+- Name: Harsh Mehlana
+- Age: 19
+- Course: B.Tech Computer Science & Engineering
+- University: Indus University, Ahmedabad, Gujarat
+- Creative skills: Video Editing, Graphic Design
+- Email: harshmehlana.24.cse@iite.indusuni.ac.in
+
+## Stack
+- HTML
+- Bootstrap 5
+- Vanilla JavaScript
+- CSS
+
+## Projects
+The three project cards are intentionally marked as coming soon. They will be replaced with real portfolio projects after the project ideas are finalized.
 
 ## Deploy
-Import this repo into Vercel or Cloudflare Pages.
-
-No build step is required for the static site:
-- Build command: none
-- Output directory: /
-
-The design is intentionally original and does not depend on another portfolio repository.
+This is a static site. Vercel or Cloudflare Pages can deploy it with no build command.
