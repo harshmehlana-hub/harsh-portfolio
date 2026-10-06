@@ -1,0 +1,6 @@
+document.addEventListener("DOMContentLoaded",()=>{const nav=document.getElementById("mainNav"),back=document.getElementById("backTop");document.getElementById("year").textContent=new Date().getFullYear();
+window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",scrollY>25);back.classList.toggle("show",scrollY>500)},{passive:true});back.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>obs.observe(e));
+const buttons=document.querySelectorAll(".filter-btn"),cards=document.querySelectorAll(".project-item");buttons.forEach(b=>b.addEventListener("click",()=>{buttons.forEach(x=>x.classList.remove("active"));b.classList.add("active");const f=b.dataset.filter;cards.forEach(c=>c.classList.toggle("d-none",f!=="all"&&c.dataset.category!==f))}));
+document.querySelectorAll("#navMenu .nav-link").forEach(l=>l.addEventListener("click",()=>{const m=document.getElementById("navMenu");if(m.classList.contains("show"))bootstrap.Collapse.getOrCreateInstance(m).hide()}));
+});
