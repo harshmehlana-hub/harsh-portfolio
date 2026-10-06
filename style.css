@@ -245,3 +245,17 @@
 .project.reveal.visible{
   transform:none;
 }
+
+/* Keep the project cards on one clean, shared row. */
+.projects{
+  align-items:stretch;
+  grid-auto-rows:1fr;
+}
+.project{
+  height:100%;
+  align-self:stretch;
+}
+.project.reveal,
+.project.reveal.visible{
+  transform:none !important;
+}
