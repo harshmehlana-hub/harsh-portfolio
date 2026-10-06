@@ -259,3 +259,21 @@
 .project.reveal.visible{
   transform:none !important;
 }
+
+/* Desktop project cards: identical outer size and exact top alignment. */
+@media (min-width:851px){
+  .projects{
+    align-items:start;
+    grid-template-rows:325px;
+  }
+  .project{
+    height:325px;
+    min-height:325px;
+  }
+}
+@media (max-width:850px){
+  .project{
+    height:auto;
+    min-height:0;
+  }
+}
