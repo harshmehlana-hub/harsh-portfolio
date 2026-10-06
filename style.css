@@ -239,3 +239,9 @@
     padding-bottom:18px;
   }
 }
+
+/* Project cards reveal without changing their shared top baseline. */
+.project.reveal,
+.project.reveal.visible{
+  transform:none;
+}
